@@ -12,7 +12,7 @@ import HappyClient from "../assets/images/team1.jpg";
 import HappyClient2 from "../assets/images/team2.jpg";
 import HappyClient3 from "../assets/images/team3.webp";
 import HappyClient4 from "../assets/images/team4.webp";
-import Counter from "./counter.jsx";
+import Counter from "./Counter";
 const CombinedAboutInnovation = () => {
   const navigate = useNavigate();
   const sectionRef = useRef(null);

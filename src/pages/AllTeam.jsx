@@ -10,7 +10,7 @@ export default function AllTeamMembers() {
 
   const fadeUp = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   const { Fb, Twitter, Pinterest } = AppIcons;
@@ -18,9 +18,13 @@ export default function AllTeamMembers() {
   return (
     <section className="w-full bg-black text-white py-24 px-4 sm:px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
-
         {/* Back Button */}
-        <motion.div className="mb-10" initial="hidden" animate="visible" variants={fadeUp}>
+        <motion.div
+          className="mb-10"
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+        >
           <button
             onClick={() => navigate(-1)}
             className="px-4 py-2 text-sm bg-[#DC2828] text-white rounded-lg hover:bg-transparent hover:text-[#DC2828] hover:border hover:border-[#DC2828] transition"
@@ -35,12 +39,12 @@ export default function AllTeamMembers() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
         >
-            <span className="text-white">
-            Meet Our
-            </span>
-          
-           <span class="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text"> Team
-            </span>
+          <span className="text-white">Meet Our</span>
+
+          <span class="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+            {" "}
+            Team
+          </span>
         </motion.h1>
 
         {/* Team Cards Grid */}
@@ -56,7 +60,6 @@ export default function AllTeamMembers() {
             >
               {/* Hover Area Only On Image */}
               <div className="relative h-80 p-4 w-full overflow-hidden group text-center">
-                
                 {/* Image */}
                 <img
                   src={member.img}
@@ -88,13 +91,11 @@ export default function AllTeamMembers() {
                     <Twitter className="text-black text-xl cursor-pointer p-1 bg-[#DC2828] rounded-full" />
                     <Pinterest className="text-black text-xl cursor-pointer p-1 bg-[#DC2828] rounded-full" />
                   </div>
-
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );

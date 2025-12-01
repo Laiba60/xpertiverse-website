@@ -1,11 +1,11 @@
-import React from 'react'
-import HeroSection from '../components/HeroSection.jsx'
-import AboutUs from '../components/AboutUs.jsx'
+import React from "react";
+import HeroSection from "../components/HeroSection.jsx";
+import AboutUs from "../components/AboutUs.jsx";
 import PerformanceSection from "../components/PerformanceSection";
 import Services from "../components/ServicesSection";
 import Testimonial from "../components/TestimonialSection";
 import Team from "../components/TeamSection";
-import WorkingTechnologies from '../components/WorkingTechnologies.jsx'
+import WorkingTechnologies from "../components/WorkingTechnologies.jsx";
 import Newsletter from "../components/NewsletterSection";
 
 function Home() {

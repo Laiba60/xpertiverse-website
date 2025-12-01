@@ -1,31 +1,43 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import { projectsData } from "../utils/constants/projectsdata";
 
-const filters = ["All", "Websites", "Mobile Apps", "AI", "Automation", "Web Apps"];
+const filters = [
+  "All",
+  "Websites",
+  "Mobile Apps",
+  "AI",
+  "Automation",
+  "Web Apps",
+];
 
 const ProjectsPage = () => {
   const [active, setActive] = useState("All");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const filteredProjects =
-    active === "All" ? projectsData : projectsData.filter((p) => p.category === active);
+    active === "All"
+      ? projectsData
+      : projectsData.filter((p) => p.category === active);
 
   return (
     <section className="w-full py-24 px-4 sm:px-6 lg:px-20 bg-[#0D0F14] min-h-screen">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h3 className="text-[#DC2828] text-sm font-semibold tracking-wider mb-2">PROJECTS</h3>
+        <h3 className="text-[#DC2828] text-sm font-semibold tracking-wider mb-2">
+          PROJECTS
+        </h3>
         <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-            <span className="text-white">
-            All Our
-            </span>
-          
-           <span class="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text"> Projects
-            </span>
-          </h2>
+          <span className="text-white">All Our</span>
+
+          <span class="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+            {" "}
+            Projects
+          </span>
+        </h2>
         <p className="text-gray-400 text-base mt-3 max-w-2xl mx-auto">
-          Explore all the innovative projects we have delivered across different domains.
+          Explore all the innovative projects we have delivered across different
+          domains.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -63,8 +75,12 @@ const ProjectsPage = () => {
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/60 transition duration-500"></div>
 
             <motion.div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-              <span className="text-[#DC2828] text-xs font-semibold">{p.tag}</span>
-              <h3 className="text-white text-xl sm:text-2xl font-bold mt-1">{p.title}</h3>
+              <span className="text-[#DC2828] text-xs font-semibold">
+                {p.tag}
+              </span>
+              <h3 className="text-white text-xl sm:text-2xl font-bold mt-1">
+                {p.title}
+              </h3>
               <p className="text-gray-300 text-sm mt-1">{p.desc}</p>
 
               <div className="flex mt-2">
@@ -72,7 +88,9 @@ const ProjectsPage = () => {
                   <svg
                     key={idx}
                     xmlns="http://www.w3.org/2000/svg"
-                    className={`h-4 w-4 ${idx < p.rating ? "text-yellow-400" : "text-gray-600"}`}
+                    className={`h-4 w-4 ${
+                      idx < p.rating ? "text-yellow-400" : "text-gray-600"
+                    }`}
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -81,9 +99,9 @@ const ProjectsPage = () => {
                 ))}
               </div>
 
-             <button
-  onClick={() => navigate(`/projects/${p.id}`)}
-  className="
+              <button
+                onClick={() => navigate(`/projects/${p.id}`)}
+                className="
     mt-4 px-4 py-2 text-sm font-semibold
     bg-[#DC2828] text-white 
     border border-transparent 
@@ -91,10 +109,9 @@ const ProjectsPage = () => {
     transition
     hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
   "
->
-  View Details
-</button>
-
+              >
+                View Details
+              </button>
             </motion.div>
           </motion.div>
         ))}
