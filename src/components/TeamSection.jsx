@@ -14,7 +14,7 @@ export default function TeamSection() {
 
         {/* Top Buttons */}
         <div className="flex justify-between items-center mb-10">
-          <button className="px-6 py-2 border border-[#1E293B] rounded-lg text-[#DC2828] text-sm">
+          <button className="px-6 py-2 border border-[#1E293B] rounded-lg text-[#DC2828] text-sm xl:text-lg font-semibold">
             {sectionTag}
           </button>
 

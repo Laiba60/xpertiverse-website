@@ -100,7 +100,7 @@ export default function TestimonialsSection() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
         >
-          <button className="px-8 py-2 font-semibold text-[#DC2828] rounded-lg border border-gray-700 text-xs lg:text-sm">
+          <button className="px-8 py-2 font-semibold text-[#DC2828] rounded-lg border border-gray-700 text-sm xl:text-lg">
             {sectionTag}
           </button>
 

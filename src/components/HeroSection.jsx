@@ -23,7 +23,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="lg:w-1/2 flex flex-col items-start"
         >
-          <p className="text-[#DC2828] mb-4 text-sm font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
+          <p className="text-[#DC2828] mb-4 text-base font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
             {HERO_CONTENT.badge}
           </p>
 

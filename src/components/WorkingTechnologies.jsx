@@ -15,21 +15,25 @@ const WorkingTechnologies = () => {
   return (
     <section className="w-full py-24 px-4 sm:px-6 lg:px-20 bg-[#0D0F14]">
       {/* Top Section */}
-      <div className="max-w-7xl mx-auto text-center mb-12">
-        <h3 className="text-[#DC2828] text-sm font-semibold tracking-wider mb-2">PORTFOLIO</h3>
-         <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-            <span className="text-white">
-            Project's
-            </span><br />
-          
-           <span class="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-            We've Delivered
-            </span>
-          </h2>
-        <p className="text-gray-400 text-base mt-3 max-w-2xl mx-auto">
-          Delivering innovative solutions using modern technologies across multiple industries.
-        </p>
-      </div>
+     {/* Top Section */}
+<div className="max-w-7xl mx-auto text-center mb-12">
+  <div className="flex justify-center mb-10">
+    <button className="px-6 py-2 border border-[#1E293B] rounded-lg text-[#DC2828] text-sm xl:text-lg font-semibold">
+      Portfolio
+    </button>
+  </div>
+  <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+    <span className="text-white">
+      Project's
+    </span><br />
+    <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+      We've Delivered
+    </span>
+  </h2>
+  <p className="text-gray-400 text-base mt-3 max-w-2xl mx-auto">
+    Delivering innovative solutions using modern technologies across multiple industries.
+  </p>
+</div>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">

@@ -63,10 +63,10 @@ const CombinedAboutInnovation = () => {
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
           className="space-y-8"
         >
-          <button className="text-[#DC2828] border border-[#1E293B] rounded-lg px-5 py-1">
+          <button className="text-[#DC2828] border border-[#1E293B] text-sm xl:text-lg font-semibold rounded-lg px-5 py-1">
             About Us
           </button>
-          <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
             <span className="text-white">
             Innovating the Future
             </span><br />
