@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TEAM_CONTENT } from "../utils/constants/text";
-import { AppIcons } from "../components/ui/AppIcons";
+import { AppIcons } from "./ui/AppIcons";
 import { useNavigate } from "react-router-dom";
 
 export default function AllTeamMembers() {

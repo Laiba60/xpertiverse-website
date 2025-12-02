@@ -4,10 +4,10 @@ import Header from "./components/layout/Header.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Home from "./pages/Home.jsx";
 import AboutDetail from "./components/AboutDetail";
-import ProjectsPage from "./pages/ProjectsPage";
-import ProjectDetail from "./pages/ProjectDetail";
+import ProjectsPage from "./components/ProjectsPage.jsx";
+import ProjectDetail from "./components/ProjectDetail.jsx";
 
-import AllTeam from "./pages/AllTeam.jsx";
+import AllTeam from "./components/AllTeam.jsx";
 
 import ServiceDetail from "./components/ServiceDetail";
 

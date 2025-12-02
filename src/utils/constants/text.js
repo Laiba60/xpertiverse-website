@@ -28,6 +28,158 @@ export const HERO_CONTENT = {
 };
 
 
+import Aboutimg from "../../assets/images/Aboutimg.jpeg";
+
+export const ABOUT_PAGE = {
+  title: "Xpertiverse",
+  subtitle: "About Us",
+  description:
+    "A passionate team of digital innovators dedicated to transforming businesses through cutting-edge technology and creative excellence.",
+  overview: {
+    title: "Xpertiverse Overview",
+    text: `Xpertiverse Pvt Ltd is a leading digital innovation and technology solutions
+company, empowering businesses with modern software development,
+digital transformation, and result-driven IT services. We specialize
+in creating scalable, intelligent, and user-centric solutions that help
+brands accelerate growth in today’s competitive digital world.`,
+    image: Aboutimg,
+  },
+};
+
+export const DIFFERENCE_ITEMS = [
+  {
+    icon: "rocket",
+    title: "Accelerated Growth",
+    desc: "We enable brands to scale faster with data-driven strategies, modern frameworks, and performance-focused execution.",
+  },
+  {
+    icon: "briefcase",
+    title: "Business-Focused Solutions",
+    desc: "Our solutions are tailored to revenue, performance, and ROI—not just design and development for the sake of delivery.",
+  },
+  {
+    icon: "barchart",
+    title: "Measured Performance",
+    desc: "Every campaign, website, and application is monitored with analytics and KPIs to ensure measurable business impact.",
+  },
+];
+
+export const MISSION_VISION_VALUES = {
+  mission: {
+    title: "Our Mission",
+    desc: `To engineer digital superiority by delivering high-impact, scalable technology solutions that maximize our clients'
+efficiency, market reach, and profitable growth.`,
+  },
+  vision: {
+    title: "Our Vision",
+    desc: `To be recognized as the trusted global partner for digital innovation, setting the industry standard for quality, technological expertise, and client transformation.`,
+  },
+  values: [
+    "Integrity & Trust: Non-negotiable honesty.",
+    "Mastery: Relentless pursuit of expertise.",
+    "Client Focus: Building long-term, invested partnerships.",
+    "Agility: Adaptive, future-proof problem-solving.",
+  ],
+};
+
+export const CORE_VALUES = [
+  {
+    icon: "❤️",
+    title: "Integrity & Transparency",
+    desc: "Honesty and ethical practices in all relationships",
+  },
+  {
+    icon: "⚡",
+    title: "Innovation & Excellence",
+    desc: "Embracing new technologies and creative solutions",
+  },
+  {
+    icon: "👥",
+    title: "Customer-Centric",
+    desc: "Your success is our success and priority",
+  },
+  {
+    icon: "🛡️",
+    title: "Continuous Improvement",
+    desc: "Always learning and evolving our methods",
+  },
+  {
+    icon: "🌍",
+    title: "Global Collaboration",
+    desc: "Diverse perspectives creating better solutions",
+  },
+  {
+    icon: "✔️",
+    title: "Quality Assurance",
+    desc: "Excellence in every project we deliver",
+  },
+];
+
+export const GLOBAL_LOCATIONS = [
+  { name: "Pakistan" },
+  { name: "UAE" },
+  { name: "Qatar" },
+  { name: "UK" },
+  { name: "International Clients" },
+];
+
+
+// IMAGES
+import Aiimg from "../../assets/images/about1.png";
+import Aboutus from "../../assets/images/about2.png";
+import HappyClient from "../../assets/images/team1.jpg";
+import HappyClient2 from "../../assets/images/team2.jpg";
+import HappyClient3 from "../../assets/images/team3.webp";
+import HappyClient4 from "../../assets/images/team4.webp";
+
+// TEXT + IMAGES for About Innovation Section
+export const ABOUT_INNOVATION = {
+  badge: "About Us",
+  headingWhite: "Innovating the Future",
+  headingGradient: "with Trust & Excellence",
+  description:
+    "From advanced software development to robust cybersecurity, we help clients transform challenges into opportunities with innovation and integrity.",
+
+  mainImages: {
+    ai: Aiimg,
+    overlay: Aboutus,
+  },
+
+  happyClientsBox: {
+    ratingStars: "★★★",
+    title: "10,000+ Client Happy",
+    description: "Lorem ipsum dolor sit amet, consectetur.",
+    clientImages: [HappyClient, HappyClient2, HappyClient3, HappyClient4],
+  },
+
+  features: [
+    {
+      icon: "FaLightbulb",
+      title: "Innovation First",
+      desc: "Constantly exploring new technologies.",
+    },
+    {
+      icon: "FaHandshake",
+      title: "Integrity & Trust",
+      desc: "We build lasting partnerships.",
+    },
+  ],
+
+  miniFeatures: [
+    { icon: "FaHandshake", text: "Innovation First" },
+    { icon: "BsFillPersonCheckFill", text: "Client-Centric" },
+    { icon: "VscWorkspaceTrusted", text: "Integrity & Trust" },
+    { icon: "IoMdTrophy", text: "Excellence" },
+  ],
+
+  counters: [
+    { label: "Projects Completed", value: 350 },
+    { label: "Satisfied Clients", value: 250 },
+    { label: "Client Satisfaction", value: 95, isPercent: true },
+  ],
+};
+
+
 
 export const PERFORMANCE_TEXT = {
   heading: "Our Performance",
@@ -379,38 +531,40 @@ export const HERO_TECH_CONTENT = {
 
 
 
-export const BLOG_CONTENT = {
-  heading: {
-    preTitle: "Our Blog",
-    title: "News & Articles",
-  },
-  posts: [
-    {
-      id: 1,
-      category: "Uncategorized",
-      date: "August 18, 2025",
-      title: "The Benefits of Managed IT Services for Small Businesses",
-      desc: "Launch your professional tech website. The Benefits of Managed IT Services for Small Businesses...",
-      image: "/images/blog11.png",
-    },
-    {
-      id: 2,
-      category: "Uncategorized",
-      date: "August 18, 2025",
-      title: "Understanding Digital Transformation: A Complete Guide",
-      desc: "Launch your professional tech website. Category 0 comment Lorem ipsum dolor sit amet...",
-      image: "/images/testimonials.jpg",
-    },
-    {
-      id: 3,
-      category: "Uncategorized",
-      date: "August 18, 2025",
-      title: "Top 5 Cybersecurity Practices Every Company Should Implement",
-      desc: "Launch your professional tech website. Category 0 comment Lorem ipsum dolor sit amet...",
-      image: "/images/blog3.avif",
-    },
-  ],
+export const projectSectionText = {
+  topButton: "Portfolio",
+  titleLine1: "Project's",
+  titleLine2: "We've Delivered",
+  description:
+    "Delivering innovative solutions using modern technologies across multiple industries.",
+  viewAllBtn: "View All Projects",
+  viewDetailsBtn: "View Details",
+  filters: ["All", "Websites", "Mobile Apps", "AI", "Automation", "Web Apps"],
 };
+
+
+
+export const companyContactData = {
+  email: {
+    heading: "Email",
+    lines: ["example@mail.com", "hello.example2@mail.com"],
+    icon: "MdOutlineMail",
+    image: "/images/contact/email.png", // example image path
+  },
+  phone: {
+    heading: "Phone",
+    lines: ["+123 456 7890", "+ (123) 3322 4455 632"],
+    icon: "FiPhoneCall",
+    image: "/images/contact/phone.png",
+  },
+  location: {
+    heading: "Location",
+    lines: ["Address line 01 lorem ipsum", "Las Vegas, USA"],
+    icon: "SlLocationPin",
+    image: "/images/contact/location.png",
+  },
+};
+
 
 
 // utils/constants/newsletter.js

@@ -1,39 +1,41 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { projectsData } from "../utils/constants/projectsdata";  // Use the shared data
-
-const filters = ["All", "Websites", "Mobile Apps", "AI", "Automation", "Web Apps"];
+import { projectsData } from "../utils/constants/projectsdata";
+import { projectSectionText } from "../utils/constants/text";
 
 const WorkingTechnologies = () => {
   const [active, setActive] = useState("All");
   const navigate = useNavigate();
 
   const filteredProjects =
-    active === "All" ? projectsData.slice(0, 3) : projectsData.filter((p) => p.category === active).slice(0, 3);
+    active === "All"
+      ? projectsData.slice(0, 3)
+      : projectsData.filter((p) => p.category === active).slice(0, 3);
 
   return (
     <section className="w-full py-24 px-4 sm:px-6 lg:px-20 bg-[#0D0F14]">
+
       {/* Top Section */}
-     {/* Top Section */}
-<div className="max-w-7xl mx-auto text-center mb-12">
-  <div className="flex justify-center mb-10">
-    <button className="px-6 py-2 border border-[#1E293B] rounded-lg text-[#DC2828] text-sm xl:text-lg font-semibold">
-      Portfolio
-    </button>
-  </div>
-  <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-    <span className="text-white">
-      Project's
-    </span><br />
-    <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-      We've Delivered
-    </span>
-  </h2>
-  <p className="text-gray-400 text-base mt-3 max-w-2xl mx-auto">
-    Delivering innovative solutions using modern technologies across multiple industries.
-  </p>
-</div>
+      <div className="max-w-7xl mx-auto text-center mb-12">
+        <div className="flex justify-center mb-10">
+          <button className="px-6 py-2 border border-[#1E293B] rounded-lg text-[#DC2828] text-sm xl:text-lg font-semibold">
+            {projectSectionText.topButton}
+          </button>
+        </div>
+
+        <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+          <span className="text-white">{projectSectionText.titleLine1}</span>
+          <br />
+          <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+            {projectSectionText.titleLine2}
+          </span>
+        </h2>
+
+        <p className="text-gray-400 text-base mt-3 max-w-2xl mx-auto">
+          {projectSectionText.description}
+        </p>
+      </div>
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -43,12 +45,19 @@ const WorkingTechnologies = () => {
             className="relative rounded-3xl overflow-hidden shadow-lg cursor-pointer group hover:border border-[#DC2828] bg-[#121721]"
             whileHover={{ scale: 1.05 }}
           >
-            <img src={p.img} alt={p.title} className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-110" />
+            <img
+              src={p.img}
+              alt={p.title}
+              className="w-full h-64 sm:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/60 transition duration-500"></div>
 
             <motion.div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
               <span className="text-[#DC2828] text-xs font-semibold">{p.tag}</span>
+
               <h3 className="text-white text-xl sm:text-2xl font-bold mt-1">{p.title}</h3>
+
               <p className="text-gray-300 text-sm mt-1">{p.desc}</p>
 
               <div className="flex mt-2">
@@ -65,21 +74,19 @@ const WorkingTechnologies = () => {
                 ))}
               </div>
 
-         <button
-  onClick={() => navigate(`/projects/${p.id}`)}
-  className="
-    mt-4 px-4 py-2 text-sm font-semibold
-    bg-[#DC2828] text-white 
-    border border-transparent 
-    rounded-lg cursor-pointer 
-    transition
-    hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
-  "
->
-  View Details
-</button>
-
-
+              <button
+                onClick={() => navigate(`/projects/${p.id}`)}
+                className="
+                  mt-4 px-4 py-2 text-sm font-semibold
+                  bg-[#DC2828] text-white 
+                  border border-transparent 
+                  rounded-lg cursor-pointer 
+                  transition
+                  hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
+                "
+              >
+                {projectSectionText.viewDetailsBtn}
+              </button>
             </motion.div>
           </motion.div>
         ))}
@@ -90,7 +97,7 @@ const WorkingTechnologies = () => {
           onClick={() => navigate("/projects")}
           className="px-8 py-3 bg-[#DC2828] text-white text-sm hover:cursor-pointer font-semibold border border-transparent rounded-md shadow-md transition-all duration-300 hover:bg-transparent hover:text-[#DC2828] hover:border-[#DC2828]"
         >
-          View All Projects
+          {projectSectionText.viewAllBtn}
         </button>
       </div>
     </section>
