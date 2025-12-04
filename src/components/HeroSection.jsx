@@ -31,21 +31,22 @@ const HeroSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="w-full flex flex-col items-center text-center"
         >
-          <p className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent mb-4 text-base font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
+          <p className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent mb-1 text-base font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
             {HERO_CONTENT.badge}
           </p>
 
-         <h1
+<h1
   className="font-semibold block text-white whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]"
 >
   {HERO_CONTENT.heading1}
 </h1>
 
 <h1
-  className="font-semibold mb-4 leading-tight sm:leading-tight lg:leading-relaxed bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]"
+  className="font-semibold -mt-8 leading-tight sm:leading-tight lg:leading-relaxed bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]"
 >
   {HERO_CONTENT.heading2}
 </h1>
+
 
 
          <p className="text-gray-300 text-2xl mb-12 leading-relaxed max-w-4xl mx-auto">
