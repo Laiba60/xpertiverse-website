@@ -14,25 +14,25 @@ const WorkingTechnologies = () => {
       : projectsData.filter((p) => p.category === active).slice(0, 3);
 
   return (
-    <section className="w-full py-24 px-4 sm:px-6 lg:px-20 bg-[#0D0F14]">
+    <section className="w-full py-24 px-4 sm:px-6 lg:px-20 bg-black text-white">
 
       {/* Top Section */}
       <div className="max-w-7xl mx-auto text-center mb-12">
         <div className="flex justify-center mb-10">
-          <button className="px-6 py-2 border border-[#1E293B] rounded-lg text-[#DC2828] text-sm xl:text-lg font-semibold">
+          <button className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-gray-700 px-6 py-2 rounded-lg text-sm xl:text-xl font-semibold">
             {projectSectionText.topButton}
           </button>
         </div>
 
-        <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+        <h2 className="text-4xl sm:text-7xl font-bold leading-tight">
           <span className="text-white">{projectSectionText.titleLine1}</span>
         
-          <span className="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
             {projectSectionText.titleLine2}
           </span>
         </h2>
 
-        <p className="text-gray-400 text-base mt-3 max-w-2xl mx-auto">
+        <p className="text-gray-300 text-lg whitespace-nowrap mt-3 max-w-2xl mx-auto">
           {projectSectionText.description}
         </p>
       </div>
@@ -42,7 +42,7 @@ const WorkingTechnologies = () => {
         {filteredProjects.map((p) => (
           <motion.div
             key={p.id}
-            className="relative rounded-3xl overflow-hidden shadow-lg cursor-pointer group hover:border border-[#DC2828] bg-[#121721]"
+            className="relative rounded-3xl overflow-hidden shadow-lg cursor-pointer group hover:border border-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD] bg-[#121721]"
             whileHover={{ scale: 1.05 }}
           >
             <img
@@ -54,7 +54,7 @@ const WorkingTechnologies = () => {
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/60 transition duration-500"></div>
 
             <motion.div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-              <span className="text-[#DC2828] text-xs font-semibold">{p.tag}</span>
+              <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent text-xs font-semibold">{p.tag}</span>
 
               <h3 className="text-white text-xl sm:text-2xl font-bold mt-1">{p.title}</h3>
 
@@ -78,11 +78,11 @@ const WorkingTechnologies = () => {
                 onClick={() => navigate(`/projects/${p.id}`)}
                 className="
                   mt-4 px-4 py-2 text-sm font-semibold
-                  bg-[#DC2828] text-white 
+                  bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white 
                   border border-transparent 
                   rounded-lg cursor-pointer 
                   transition
-                  hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
+                  hover:bg-transparent hover:border-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD] hover:text-transparent hover:bg-clip-text
                 "
               >
                 {projectSectionText.viewDetailsBtn}
@@ -95,7 +95,7 @@ const WorkingTechnologies = () => {
       <div className="text-center mt-16">
         <button
           onClick={() => navigate("/projects")}
-          className="px-8 py-3 bg-[#DC2828] text-white text-sm hover:cursor-pointer font-semibold border border-transparent rounded-md shadow-md transition-all duration-300 hover:bg-transparent hover:text-[#DC2828] hover:border-[#DC2828]"
+          className="px-8 py-3 bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white text-lg font-semibold border border-transparent rounded-md shadow-md transition-all duration-300 hover:bg-transparent hover:text-transparent hover:bg-clip-text hover:border-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]"
         >
           {projectSectionText.viewAllBtn}
         </button>

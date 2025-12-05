@@ -35,57 +35,66 @@ const HeroSection = () => {
             {HERO_CONTENT.badge}
           </p>
 
-<h1
-  className="font-semibold block text-white whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]"
->
-  {HERO_CONTENT.heading1}
-</h1>
+          <h1 className="font-semibold block text-white whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]">
+            {HERO_CONTENT.heading1}
+          </h1>
 
-<h1
-  className="font-semibold -mt-8 leading-tight sm:leading-tight lg:leading-relaxed bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]"
->
-  {HERO_CONTENT.heading2}
-</h1>
+          <h1 className="font-semibold -mt-8 leading-tight sm:leading-tight lg:leading-relaxed bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]">
+            {HERO_CONTENT.heading2}
+          </h1>
 
-
-
-         <p className="text-gray-300 text-2xl mb-12 leading-relaxed max-w-4xl mx-auto">
-  {HERO_CONTENT.description}
-</p>
-
+          <p className="text-gray-300 text-2xl mb-12 leading-relaxed max-w-4xl mx-auto">
+            {HERO_CONTENT.description}
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <Link
-              to="/contact"
-              className="
-                cursor-pointer 
-                bg-gradient-to-r from-[#9016B5] to-[#245EBD] 
-                text-white 
-                border border-transparent
-                transition px-6 py-2 rounded-md w-full sm:w-auto text-center text-2xl
-                hover:bg-transparent
-                hover:text-transparent
-                hover:border-[#9016B5]
-                hover:bg-clip-text
-                hover:bg-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]
-              "
-            >
-              {HERO_CONTENT.buttons.primary}
-            </Link>
 
+            {/* Primary Button with Glow */}
+ <div className="relative inline-block overflow-hidden">
+  <button
+    className="
+      relative z-10
+      px-7 py-3 rounded-md text-xl font-medium
+      bg-gradient-to-r from-[#9016B5] to-[#245EBD]
+      text-white
+    "
+  >
+    Contact Us
+  </button>
+
+  {/* Moving Glow Line */}
+  <div
+    className="
+      absolute top-0 left-0
+      h-full w-2
+      bg-white
+      blur-xl
+      animate-sweep
+    "
+  ></div>
+</div>
+
+
+
+
+
+
+            {/* Secondary Button with Glow */}
             <Link
               to="/aboutdetail"
               className="
                 border border-[#9016B5]
                 bg-gradient-to-r from-[#9016B5] to-[#245EBD]
                 bg-clip-text text-transparent
-                transition px-6 py-2 rounded-md font-medium w-full sm:w-auto text-center text-2xl
+                transition px-7 py-3 rounded-md font-medium w-full sm:w-auto text-center text-xl
                 hover:bg-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]
                 hover:text-white
+                animate-glowOutline
               "
             >
               {HERO_CONTENT.buttons.secondary}
             </Link>
+
           </div>
         </motion.div>
 

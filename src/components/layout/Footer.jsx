@@ -10,7 +10,6 @@ export default function FooterSection() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Scroll or navigate logic
   const handleNavigation = (id) => {
     if (id === "contact") {
       navigate("/contact");
@@ -35,9 +34,7 @@ export default function FooterSection() {
 
   const container = {
     hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.2 },
-    },
+    visible: { transition: { staggerChildren: 0.2 } },
   };
 
   const item = {
@@ -47,7 +44,7 @@ export default function FooterSection() {
 
   return (
     <motion.footer
-      className="bg-black text-white py-16 px-4 sm:px-6 lg:px-20"
+      className="bg-[#0F1623] text-gray-200 py-16 px-4 sm:px-6 lg:px-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -57,12 +54,12 @@ export default function FooterSection() {
         {/* Logo & Description */}
         <motion.div className="w-full lg:w-auto" variants={item}>
           <div className="flex items-center gap-3 mb-4">
-            <div className="text-3xl">🔗</div>
-            <h3 className="text-2xl font-semibold">{logo}</h3>
+            <div className="text-3xl text-[#DC2828]">🔗</div>
+            <h3 className="text-2xl font-semibold text-white">{logo}</h3>
           </div>
-          <h3 className="text-2xl">{tagline}</h3>
+          <h3 className="text-xl bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">{tagline}</h3>
           <p className="text-gray-400 pt-4 max-w-sm">{description}</p>
-          <div className="mt-12 pt-6 text-sm">{copyright}</div>
+          <div className="mt-12 pt-6 text-sm text-gray-500">{copyright}</div>
         </motion.div>
 
         {/* Links Section */}
@@ -70,13 +67,16 @@ export default function FooterSection() {
           <div className="flex flex-col sm:flex-row gap-10 lg:gap-20">
             {/* Navigation Links */}
             <div>
-              <h4 className="text-xl font-semibold mb-4">Navigation</h4>
-              <ul className="space-y-2 text-gray-400 cursor-pointer">
+              <h4 className="text-xl font-semibold text-white mb-4">Navigation</h4>
+              <ul className="space-y-2 text-gray-400 cursor-pointer hover:text-[#DC2828]">
                 {navigation.map((item, index) => {
-                  // Map footer navigation to section IDs
                   let id = item.toLowerCase().replace(" ", "");
                   return (
-                    <li key={index} onClick={() => handleNavigation(id)}>
+                    <li
+                      key={index}
+                      onClick={() => handleNavigation(id)}
+                      className="transition-colors duration-300"
+                    >
                       {item}
                     </li>
                   );
@@ -86,12 +86,16 @@ export default function FooterSection() {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400 cursor-pointer">
+              <h4 className="text-xl font-semibold text-white mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-gray-400 cursor-pointer hover:text-[#DC2828]">
                 {quickLinks
-                  .filter((item) => item === "Contact") // only keep Contact
+                  .filter((item) => item === "Contact")
                   .map((item, index) => (
-                    <li key={index} onClick={() => handleNavigation("contact")}>
+                    <li
+                      key={index}
+                      onClick={() => handleNavigation("contact")}
+                      className="transition-colors duration-300"
+                    >
                       {item}
                     </li>
                   ))}
@@ -100,9 +104,11 @@ export default function FooterSection() {
           </div>
 
           {/* Policies */}
-          <div className="flex flex-wrap gap-5 sm:gap-10 pt-11 text-gray-400">
+          <div className="flex flex-wrap gap-5 sm:gap-10 pt-11 text-gray-500">
             {policies.map((policy, index) => (
-              <p key={index}>{policy}</p>
+              <p key={index} className="hover:text-[#DC2828] cursor-pointer transition-colors duration-300">
+                {policy}
+              </p>
             ))}
           </div>
         </motion.div>

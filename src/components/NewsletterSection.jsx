@@ -39,13 +39,11 @@ export default function NewsletterSection() {
           animate={controls}
           variants={textVariants}
         >
-         <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
-            <span className="text-white">
-            {heading}
-            </span><br />
-          
-           <span class="bg-linear-to-r from-[#F56716] to-[#EA4920] text-transparent bg-clip-text">
-            {heading1}
+          <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
+            <span className="text-white">{heading}</span>
+            <br />
+            <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+              {heading1}
             </span>
           </h2>
 
@@ -54,24 +52,24 @@ export default function NewsletterSection() {
           </p>
         </motion.div>
 
-   <motion.button
-  className="
-    cursor-pointer
-    bg-[#DC2828] text-white
-    border border-transparent
-    hover:bg-transparent hover:border-[#DC2828] hover:text-[#DC2828]
-    transition 
-    px-6 py-3 rounded-md text-lg font-medium 
-    w-full sm:w-auto
-  "
-  initial="hidden"
-  animate={controls}
-  variants={buttonVariants}
-  onClick={() => navigate("/contact")}
->
-  {buttonText}
-</motion.button>
-
+        {/* Button */}
+        <motion.button
+          className="
+            cursor-pointer
+            bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white
+            border border-transparent
+            hover:bg-transparent hover:text-transparent hover:bg-clip-text hover:border-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]
+            transition 
+            px-6 py-3 rounded-md text-xl font-medium 
+            w-full sm:w-auto
+          "
+          initial="hidden"
+          animate={controls}
+          variants={buttonVariants}
+          onClick={() => navigate("/contact")}
+        >
+          {buttonText}
+        </motion.button>
 
       </div>
     </section>
