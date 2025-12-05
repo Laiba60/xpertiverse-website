@@ -26,7 +26,7 @@ const AboutDetail = () => {
             {ABOUT_PAGE.subtitle}
           </span>
 
-          <h2 className="text-4xl font-bold mt-7 bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mt-7 bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">
             {ABOUT_PAGE.title}
           </h2>
 
@@ -41,7 +41,7 @@ const AboutDetail = () => {
             <div>
               <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
                 <span className="text-white">{ABOUT_PAGE.title}</span>{" "}
-                <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+                <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
                   Overview
                 </span>
               </h2>
@@ -66,7 +66,7 @@ const AboutDetail = () => {
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
               <span className="text-white">What Makes</span>{" "}
-              <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+              <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
                 Us Different
               </span>
             </h2>
@@ -77,7 +77,7 @@ const AboutDetail = () => {
                   key={i}
                   className="flex flex-col items-center text-white bg-[#121721] p-8 rounded-2xl border border-[#1A2438] hover:border-[#9016B5] hover:scale-105 transition-all duration-300"
                 >
-                  <div className="p-4 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full shadow-md mb-4">
+                  <div className="p-4 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full shadow-md mb-4">
                     {iconMap[item.icon]}
                   </div>
 
@@ -95,7 +95,7 @@ const AboutDetail = () => {
             <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-4">
               <span className="text-white">Our Core</span>
               <br />
-              <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+              <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
                 Mission, Visions & Values
               </span>
             </h2>
@@ -103,7 +103,7 @@ const AboutDetail = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {/* Mission */}
               <div className="bg-[#0D1526] p-8 rounded-3xl border border-[#1A2438] hover:border-[#9016B5] transition-all duration-300">
-                <div className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full p-3 inline-flex items-center justify-center mb-4">
+                <div className="bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full p-3 inline-flex items-center justify-center mb-4">
                   <Crosshair className="text-white" size={30} />
                 </div>
 
@@ -118,7 +118,7 @@ const AboutDetail = () => {
 
               {/* Vision */}
               <div className="bg-[#0D1526] p-8 rounded-3xl border border-[#1A2438] hover:border-[#9016B5] transition-all duration-300">
-                <div className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full p-3 inline-flex items-center justify-center mb-4">
+                <div className="bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full p-3 inline-flex items-center justify-center mb-4">
                   <Eye className="text-white" size={30} />
                 </div>
 
@@ -133,7 +133,7 @@ const AboutDetail = () => {
 
               {/* Values */}
               <div className="bg-[#0D1526] p-8 rounded-3xl border border-[#1A2438] hover:border-[#9016B5] transition-all duration-300">
-                <div className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full p-3 inline-flex items-center justify-center mb-4">
+                <div className="bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full p-3 inline-flex items-center justify-center mb-4">
                   <Heart className="text-white" size={30} />
                 </div>
 
@@ -155,7 +155,7 @@ const AboutDetail = () => {
         <section className="bg-[#0E1A2A] text-white py-20 px-6">
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-4 text-center">
             <span className="text-white">Our</span>{" "}
-            <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+            <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
               Global Reach
             </span>
           </h2>

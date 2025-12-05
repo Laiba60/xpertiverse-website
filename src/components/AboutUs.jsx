@@ -51,14 +51,14 @@ const CombinedAboutInnovation = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-center max-w-3xl mx-auto mb-16"
       >
-        <button className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-[#1E293B] text-sm xl:text-xl font-semibold rounded-lg px-5 py-1">
+        <button className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-[#1E293B] text-sm xl:text-xl font-semibold rounded-lg px-5 py-1">
           {ABOUT_INNOVATION.badge}
         </button>
 
         <h2 className="text-4xl lg:text-7xl whitespace-nowrap font-bold leading-tight mt-4">
           <span className="text-white">{ABOUT_INNOVATION.headingWhite}</span>
           <br />
-          <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">
             {ABOUT_INNOVATION.headingGradient}
           </span>
         </h2>
@@ -120,7 +120,7 @@ const CombinedAboutInnovation = () => {
                   <Counter to={item.value} start={isInView} />
                   {item.isPercent ? "%" : "+"}
                 </p>
-                <p className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">
+                <p className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">
                   {item.label}
                 </p>
               </div>
@@ -131,9 +131,9 @@ const CombinedAboutInnovation = () => {
           <button
             className="cursor-pointer px-6 py-2 rounded-md w-full sm:w-auto text-center
               transition-all duration-300
-              bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white border border-transparent
+              bg-linear-to-r from-[#9016B5] to-[#245EBD] text-white border border-transparent
               hover:bg-transparent hover:border-[#9016B5]
-              hover:text-transparent hover:bg-clip-text text-lg hover:bg-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]"
+              hover:text-transparent hover:bg-clip-text text-lg hover:bg-linear-to-r hover:from-[#9016B5] hover:to-[#245EBD]"
             onClick={() => navigate("/aboutdetail")}
           >
             Learn More
