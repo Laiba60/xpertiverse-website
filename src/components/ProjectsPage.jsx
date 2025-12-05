@@ -74,7 +74,7 @@ const ProjectsPage = () => {
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/60 transition duration-500"></div>
 
-            <motion.div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+            <motion.div className="absolute bottom-0 left-0 w-full p-6 bg-linear-to-t from-black/80 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500">
               <span className="text-[#DC2828] text-xs font-semibold">
                 {p.tag}
               </span>

@@ -32,7 +32,7 @@ export default function ServiceDetail() {
         <motion.div className="w-full flex justify-start" variants={fadeUp}>
           <button
             onClick={() => navigate(-1)}
-            className="mb-8 px-4 py-2 text-sm bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white rounded-lg hover:opacity-80 transition"
+            className="mb-8 px-4 py-2 text-sm bg-linear-to-r from-[#9016B5] to-[#245EBD] text-white rounded-lg hover:opacity-80 transition"
           >
             ← Back
           </button>
@@ -45,7 +45,7 @@ export default function ServiceDetail() {
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
             <span className="text-white">{service.heading1}</span>{" "}
-            <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+            <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
               {service.heading2}
             </span>
           </h2>
@@ -72,7 +72,7 @@ export default function ServiceDetail() {
 
         {/* Features Section */}
         <motion.div variants={fadeUp}>
-          <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Features</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Features</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, idx) => (
               <motion.div
@@ -90,7 +90,7 @@ export default function ServiceDetail() {
 
         {/* Benefits Section */}
         <motion.div variants={fadeUp}>
-          <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Benefits</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Benefits</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {benefits.map((benefit, idx) => (
               <motion.div
@@ -105,7 +105,7 @@ export default function ServiceDetail() {
 
         {/* Tools Section */}
         <motion.div variants={fadeUp}>
-          <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Tools & Technologies</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Tools & Technologies</h2>
           <div className="flex flex-wrap gap-4 justify-center">
             {tools.map((tool, idx) => (
               <motion.span
@@ -122,7 +122,7 @@ export default function ServiceDetail() {
         {/* Testimonials Section */}
         {testimonials?.length > 0 && (
           <motion.div variants={fadeUp}>
-            <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Client Testimonials</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Client Testimonials</h2>
             <div className="grid sm:grid-cols-2 gap-6">
               {testimonials.map((t, idx) => (
                 <motion.div
@@ -142,7 +142,7 @@ export default function ServiceDetail() {
         {/* FAQ Section */}
         {faq?.length > 0 && (
           <motion.div variants={fadeUp}>
-            <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">FAQs</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">FAQs</h2>
             <div className="space-y-4 max-w-3xl mx-auto">
               {faq.map((item, idx) => (
                 <motion.details
@@ -162,7 +162,7 @@ export default function ServiceDetail() {
         {/* Pricing Section */}
         {pricing?.length > 0 && (
           <motion.div variants={fadeUp}>
-            <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Pricing</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent">Pricing</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {pricing.map((p, idx) => (
                 <motion.div
@@ -186,7 +186,7 @@ export default function ServiceDetail() {
         <motion.div className="text-center mt-12" variants={fadeUp}>
           <Link
             to="/contact"
-            className="px-8 py-3 text-white bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full font-semibold hover:bg-transparent hover:text-[#9016B5] hover:border hover:border-[#9016B5] transition"
+            className="px-8 py-3 text-white bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full font-semibold hover:bg-transparent hover:text-[#9016B5] hover:border hover:border-[#9016B5] transition"
           >
             Contact Us for {service.title}
           </Link>

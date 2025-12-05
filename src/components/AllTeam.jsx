@@ -28,7 +28,7 @@ export default function AllTeamMembers() {
         >
           <button
             onClick={() => navigate(-1)}
-            className="px-4 py-2 text-sm bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white rounded-lg hover:opacity-80 transition"
+            className="px-4 py-2 text-sm bg-linear-to-r from-[#9016B5] to-[#245EBD] text-white rounded-lg hover:opacity-80 transition"
           >
             ← Back
           </button>
@@ -41,7 +41,7 @@ export default function AllTeamMembers() {
           animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
         >
           <span className="text-white">Meet Our</span>
-          <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+          <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
             {" "}Team
           </span>
         </motion.h1>
@@ -84,15 +84,15 @@ export default function AllTeamMembers() {
                   </h3>
 
                   {/* Role text gradient */}
-                  <p className="text-transparent bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-sm transition-all duration-700 group-hover:-translate-y-2">
+                  <p className="text-transparent bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-sm transition-all duration-700 group-hover:-translate-y-2">
                     {member.role}
                   </p>
 
                   {/* Social Icons */}
                   <div className="flex gap-4 mt-3 opacity-0 justify-center translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                    <Fb className="text-[#0B0F19] text-xl cursor-pointer p-2 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
-                    <Twitter className="text-[#0B0F19] text-xl cursor-pointer p-2 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
-                    <Pinterest className="text-[#0B0F19] text-xl cursor-pointer p-2 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
+                    <Fb className="text-[#0B0F19] text-xl cursor-pointer p-2 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
+                    <Twitter className="text-[#0B0F19] text-xl cursor-pointer p-2 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
+                    <Pinterest className="text-[#0B0F19] text-xl cursor-pointer p-2 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
                   </div>
 
                 </div>

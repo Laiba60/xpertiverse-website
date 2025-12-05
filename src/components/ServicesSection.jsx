@@ -32,12 +32,12 @@ export default function ServicesSection() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8 }}
         >
-          <button className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-[#1E293B] text-sm xl:text-xl font-semibold rounded-lg px-6 py-2">
+          <button className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-[#1E293B] text-sm xl:text-xl font-semibold rounded-lg px-6 py-2">
             {sectionTag}
           </button>
           <h2 className="text-4xl sm:text-7xl whitespace-nowrap font-bold leading-tight">
             <span className="text-white">{heading}</span><br />
-            <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+            <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
               {heading1}
             </span>
           </h2>
@@ -68,7 +68,7 @@ export default function ServicesSection() {
               <button
                 onClick={() => navigate(`/service/${i}`)}
                 className="mt-6 px-4 py-2 text-sm font-semibold rounded-lg 
-                  bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white border border-transparent
+                  bg-linear-to-r from-[#9016B5] to-[#245EBD] text-white border border-transparent
                   hover:bg-transparent hover:border-[#9016B5] hover:text-transparent hover:bg-clip-text
                   transition"
               >

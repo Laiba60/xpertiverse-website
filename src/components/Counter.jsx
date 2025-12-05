@@ -4,10 +4,10 @@ const Counter = ({ to, start }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    if (!start) return; // Only start counting when start=true
+    if (!start) return; 
 
     let startTime = null;
-    const duration = 1500; // counting duration in ms
+    const duration = 1500; 
 
     const step = (timestamp) => {
       if (!startTime) startTime = timestamp;

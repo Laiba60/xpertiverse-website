@@ -10,13 +10,13 @@ const Contactform = () => {
           {/* FORM SECTION */}
           <div className="w-full lg:w-1/2 flex flex-col gap-8">
             <div>
-              <h2 className="text-xl bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text border border-gray-500/40 px-3 py-2.5 inline-block">
+              <h2 className="text-xl bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text border border-gray-500/40 px-3 py-2.5 inline-block">
                 Contact us
               </h2>
 
               <h2 className="text-4xl sm:text-7xl font-bold leading-tight mt-2">
                 <span className="text-white">Get In</span>
-                <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+                <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
                   {" "}Touch
                 </span>
               </h2>
@@ -80,7 +80,7 @@ const Contactform = () => {
 
                 {/* Submit Button */}
                 <button
-                  className="cursor-pointer w-full sm:w-auto bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white px-6 py-3 rounded-md font-semibold
+                  className="cursor-pointer w-full sm:w-auto bg-linear-to-r from-[#9016B5] to-[#245EBD] text-white px-6 py-3 rounded-md font-semibold
                     transition-all duration-300 border border-transparent hover:bg-transparent hover:text-transparent hover:bg-clip-text hover:border-[#9016B5]"
                 >
                   Send Message

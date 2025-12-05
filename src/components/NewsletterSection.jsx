@@ -42,7 +42,7 @@ export default function NewsletterSection() {
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight">
             <span className="text-white">{heading}</span>
             <br />
-            <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+            <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
               {heading1}
             </span>
           </h2>
@@ -56,7 +56,7 @@ export default function NewsletterSection() {
         <motion.button
           className="
             cursor-pointer
-            bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-white
+            bg-linear-to-r from-[#9016B5] to-[#245EBD] text-white
             border border-transparent
             hover:bg-transparent hover:text-transparent hover:bg-clip-text hover:border-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]
             transition 

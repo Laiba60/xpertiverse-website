@@ -19,10 +19,10 @@ const HeroSection = () => {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/80 z-[1]"></div>
+      <div className="absolute inset-0 bg-black/80 z-1"></div>
 
       {/* Main Content */}
-      <div className="w-full mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 relative z-[2]">
+      <div className="w-full mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 relative z-2">
 
         {/* Left Content */}
         <motion.div
@@ -31,7 +31,7 @@ const HeroSection = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="w-full flex flex-col items-center text-center"
         >
-          <p className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent mb-1 text-base font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
+          <p className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent mb-1 text-base font-medium border border-[#1E293B] rounded-2xl px-2.5 py-3">
             {HERO_CONTENT.badge}
           </p>
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             {HERO_CONTENT.heading1}
           </h1>
 
-          <h1 className="font-semibold -mt-8 leading-tight sm:leading-tight lg:leading-relaxed bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]">
+          <h1 className="font-semibold -mt-8 leading-tight sm:leading-tight lg:leading-relaxed bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent whitespace-nowrap text-[2rem] sm:text-[3rem] md:text-[2rem] lg:text-[3rem] xl:text-[5rem] 2xl:text-[6rem]">
             {HERO_CONTENT.heading2}
           </h1>
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
     className="
       relative z-10
       px-7 py-3 rounded-md text-xl font-medium
-      bg-gradient-to-r from-[#9016B5] to-[#245EBD]
+      bg-linear-to-r from-[#9016B5] to-[#245EBD]
       text-white
     "
   >
@@ -84,10 +84,10 @@ const HeroSection = () => {
               to="/aboutdetail"
               className="
                 border border-[#9016B5]
-                bg-gradient-to-r from-[#9016B5] to-[#245EBD]
+                bg-linear-to-r from-[#9016B5] to-[#245EBD]
                 bg-clip-text text-transparent
                 transition px-7 py-3 rounded-md font-medium w-full sm:w-auto text-center text-xl
-                hover:bg-gradient-to-r hover:from-[#9016B5] hover:to-[#245EBD]
+                hover:bg-linear-to-r hover:from-[#9016B5] hover:to-[#245EBD]
                 hover:text-white
                 animate-glowOutline
               "
