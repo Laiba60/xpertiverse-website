@@ -45,7 +45,7 @@ export default function PerformanceSection() {
             <span className="text-white whitespace-nowrap">
               {PERFORMANCE_TEXT.heading}
             </span><br />
-            <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+            <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
               {PERFORMANCE_TEXT.heading1}
             </span>
           </motion.h2>
@@ -80,7 +80,7 @@ export default function PerformanceSection() {
                   {startCount ? <CountUp end={numericValue} duration={2} /> : 0}
                   {symbol}
                 </h3>
-                <p className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent mt-1 text-sm 2xl:text-base font-semibold">
+                <p className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent mt-1 text-sm 2xl:text-base font-semibold">
                   {item.label}
                 </p>
               </motion.div>

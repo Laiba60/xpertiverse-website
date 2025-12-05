@@ -14,7 +14,7 @@ export default function TeamSection() {
 
         {/* Top Buttons */}
         <div className="flex justify-between items-center mb-10">
-          <button className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-gray-700 px-6 py-2 rounded-lg text-sm xl:text-xl font-semibold">
+          <button className="bg-linear-to-r from-[#9016B5] to-[#245EBD] bg-clip-text text-transparent border border-gray-700 px-6 py-2 rounded-lg text-sm xl:text-xl font-semibold">
             {sectionTag}
           </button>
 
@@ -22,7 +22,7 @@ export default function TeamSection() {
             onClick={() => navigate("/all-team-members")}
             className="
               px-6 py-3 rounded-xl
-              bg-gradient-to-r from-[#9016B5] to-[#245EBD]
+              bg-linear-to-r from-[#9016B5] to-[#245EBD]
               text-white text-lg
               border border-transparent
               hover:bg-transparent hover:border-[#9016B5]
@@ -37,7 +37,7 @@ export default function TeamSection() {
         {/* Heading */}
         <h2 className="text-4xl sm:text-7xl font-bold leading-tight mb-6">
           <span className="text-white">{heading}</span><br />
-          <span className="bg-gradient-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
+          <span className="bg-linear-to-r from-[#9016B5] to-[#245EBD] text-transparent bg-clip-text">
             {heading1}
           </span>
         </h2>
@@ -88,9 +88,9 @@ export default function TeamSection() {
 
                     {/* Social Icons */}
                     <div className="flex gap-4 mt-3 opacity-0 justify-center translate-y-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                      <Fb className="text-white text-3xl cursor-pointer p-1 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
-                      <Twitter className="text-white text-3xl cursor-pointer p-1 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
-                      <Pinterest className="text-white text-3xl cursor-pointer p-1 bg-gradient-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
+                      <Fb className="text-white text-3xl cursor-pointer p-1 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
+                      <Twitter className="text-white text-3xl cursor-pointer p-1 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
+                      <Pinterest className="text-white text-3xl cursor-pointer p-1 bg-linear-to-r from-[#9016B5] to-[#245EBD] rounded-full" />
                     </div>
 
                   </div>
