@@ -570,10 +570,10 @@ export const companyContactData = {
 // utils/constants/newsletter.js
 
 export const NEWSLETTER_CONTENT = {
-  heading: "Get in Touch",
+  heading: "Connect With Us",
   heading1: "with Xpertiverse",
   description:
-    "Have questions, feedback, or want to discuss a project? Reach out to our team and we’ll get back to you promptly.",
+    "Have questions or ideas? Our team is here to help—drop us a message and we’ll respond quickly.",
   buttonText: "Contact Us",
 };
 
